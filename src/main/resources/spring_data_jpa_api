@@ -1,0 +1,43 @@
+spring data jpa API:
+====================
+	
+	Repository(I) <- CrudRepository(I) <-PagingAndSortingRepository(I) <- JpaRepository(I) 	<-JpaRepositoryImplementation(I) <- SimpleJpaRepository(C)
+	
+	CrudRepository
+	-------------
+	
+	Optional<T> findById(ID id);
+	boolean existsById(ID id);
+	Iterable<T> findAll();
+	Iterable<T> findAllById(Iterable<ID> ids);
+	long count();
+	
+	<S extends T> S save(S entity);
+	<S extends T> Iterable<S> saveAll(Iterable<S> entities);
+	
+	void deleteById(ID id);
+	void delete(T entity);
+	void deleteAll(Iterable<? extends T> entities);
+	void deleteAll();
+	
+	PagingAndSortingRepository
+	------------------------
+	Iterable<T> findAll(Sort sort);
+	Page<T> findAll(Pageable pageable);
+	
+	JpaRepository
+	------------
+	List<T> findAll();
+	List<T> findAll(Sort sort);
+	<S extends T> List<S> findAll(Example<S> example);
+	<S extends T> List<S> findAll(Example<S> example, Sort sort);
+	List<T> findAllById(Iterable<ID> ids);
+	T getOne(ID id);
+	
+	<S extends T> List<S> saveAll(Iterable<S> entities);
+	void flush();
+	<S extends T> S saveAndFlush(S entity);
+	
+	void deleteInBatch(Iterable<T> entities);
+	void deleteAllInBatch();
+	

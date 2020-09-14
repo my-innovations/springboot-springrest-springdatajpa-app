@@ -1,0 +1,15 @@
+
+Diff Types of Tests
+1.Smoke & Sanity Test
+2.Contineous Test
+3.Regression test
+4.Performance Test
+7.Acceptance Test
+
+
+Unit Test
+Integretion Test
+System test
+
+Libraries:
+junit,spring test,AssertJ,Hamcrest,JSONPath,Mockito

@@ -1,0 +1,289 @@
+{
+	"info": {
+		"_postman_id": "abd9facd-bfe6-4ba4-a209-faf311991f12",
+		"name": "springbootrest_springdatajpa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8081/add-user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"punya\",\n\t\"email\":\"punya@gmail.com\",\n\t\"dob\":\"11/05/1980\",\n\t\"createdAtDate\":\"09/04/2019\",\n\t\"updatedAtDate\":\"09/04/2019\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/add-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"add-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"dob\":\"11/05/2020\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/patchUser/1",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"punyasm\",\n\t\"email\":\"punyasm@gmail.com\",\n\t\"dob\":\"11/05/1980\",\n\t\"createdAtDate\":\"09/04/2019\",\n\t\"updatedAtDate\":\"09/04/2019\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/patchUser/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"patchUser",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/get-user/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"sipun\",\n\t\"email\":\"sipun@gmail.com\",\n\t\"dob\":\"11/05/1994\",\n\t\"createdAtDate\":\"09/04/2019\",\n\t\"updatedAtDate\":\"09/04/2019\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/get-user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"get-user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/get-user-by-id/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"sipun\",\n\t\"email\":\"sipun@gmail.com\",\n\t\"dob\":\"11/05/1994\",\n\t\"createdAtDate\":\"09/04/2019\",\n\t\"updatedAtDate\":\"09/04/2019\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/get-user-by-id/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"get-user-by-id",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/get-user-details/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"sipun\",\n\t\"email\":\"sipun@gmail.com\",\n\t\"dob\":\"11/05/1994\",\n\t\"createdAtDate\":\"09/04/2019\",\n\t\"updatedAtDate\":\"09/04/2019\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/get-user-details/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"get-user-details",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/del-user/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"sipun\",\n\t\"email\":\"sipun@gmail.com\",\n\t\"dob\":\"11/05/1994\",\n\t\"createdAtDate\":\"09/04/2019\",\n\t\"updatedAtDate\":\"09/04/2019\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/del-user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"del-user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/delete-user/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"sipun\",\n\t\"email\":\"sipun@gmail.com\",\n\t\"dob\":\"11/05/1994\",\n\t\"createdAtDate\":\"09/04/2019\",\n\t\"updatedAtDate\":\"09/04/2019\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/delete-user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"delete-user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/user/2",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"name\": \"Ashirbad\",\n        \"email\": \"sipun@gmail.com\",\n        \"dob\": \"11/05/1994\",\n        \"createdAtDate\": \"09/04/2019\",\n        \"updatedAtDate\": \"09/04/2019\"\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:8081/user/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
